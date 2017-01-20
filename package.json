@@ -1,0 +1,26 @@
+{
+  "name": "blogpost",
+  "version": "1.0.0",
+  "main": "blogPostsRouter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsopel94/blog-post.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsopel94/blog-post/issues"
+  },
+  "homepage": "https://github.com/dsopel94/blog-post#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "uuid": "^3.0.1"
+  }
+}
