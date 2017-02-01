@@ -6,17 +6,16 @@ const jsonParser = bodyParser.json();
 
 const { BlogPosts } = require('./models');
 
-BlogPosts.create('Call Me Ishmael', 'A Guide to Moby Dick', 'Herman Melville', '1851');
 
 //Return all blog post items
 
-router.get('/', (req, res) => {
+/*router.get('/', (req, res) => {
   res.json(BlogPosts.get());
-});
+});*/
 
 // Create a new Blog Post and validate it
 
-router.post('/', jsonParser, (req, res) => {
+router.post('/posts', jsonParser, (req, res) => {
   const requiredFields = ['title', 'content', 'author']
   for (let i = 0; i < requiredFields.length; i++) {
     const field = requiredFields[i];
